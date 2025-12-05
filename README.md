@@ -46,65 +46,56 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-🧩 How It Works
+
+🧩 **How It Works**
+```
+
 🔹 Preprocessing
-
 Input values are scaled using scaler.pkl
-
 Categorical variables are one-hot encoded internally
 
 🔹 Prediction
-
 Logistic Regression: High , Moderate , Low Risk
-
 SVM: outputs -1 or 1 for risk prediction
 
-
-
 🔹 PDF Report
-
 Generated using FPDF
-
 Contains all inputs, predictions, and doctor advice
-
 Includes disclaimer
+```
 
+📦 **Required Files**
 
-📦 Required Files
-File	Purpose
+```
 models.pth	Saved model weights for Logistic Regression & SVM
 scaler.pkl	StandardScaler for input features
 app.py	Streamlit UI and prediction logic
 requirements.txt	Python dependencies
+```
 
 
-
-📝 Future Improvements
-
+📝 **Future Improvements**
+```
 Add more real-world features for more accurate predictions
-
 Integrate transformer models for enhanced risk estimation
-
 Improve UI styling with modern animations and interactive charts
-
 Include user authentication & history tracking
-
 Add real-time model retraining with new incoming data
+```
 
-
-⚠️ Disclaimer
-
+⚠️ **Disclaimer**
+```
 This tool is for informational purposes only and does not constitute a medical diagnosis.
 Always consult a qualified healthcare professional for personalized advice.
+```
 
-
-🤝 Contributing
+🤝 **Contributing**
 
 Contributions are welcome—open issues or PRs for suggestions or improvements.
 
 
-📜 License
-
+📜 **License**
+```
 Released under the MIT License.
 
 This is **truly everything in a single block**:  
@@ -114,5 +105,5 @@ This is **truly everything in a single block**:
 - Required files  
 - `requirements.txt`  
 - Future improvements  
+``` 
 
-- Disclaimer & license  
