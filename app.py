@@ -88,28 +88,12 @@ cp_typical = 1 if cp == "Typical Chest Pain" else 0
 cp_atypical = 1 if cp == "Atypical Chest Pain" else 0
 cp_noncardiac = 1 if cp == "Non-Cardiac Chest Pain" else 0
 
-# Default/median values for remaining features
-fbs = 0
-restecg_normal = 1
-restecg_st = 0
-slope_flat = 0
-slope_upsloping = 1
-vessel_zero = 1
-vessel_one = vessel_two = vessel_three = 0
-thal_no = 0
-thal_normal = 1
-thal_reversable = 0
 # Build input array in correct order
 input_data = np.array([[
     age, rest_bp, chol, thalach, oldpeak,
     sex_Male,
     cp_atypical, cp_noncardiac, cp_typical,
-    fbs,
-    restecg_normal, restecg_st,
-    exercise_induced_angina,
-    slope_flat, slope_upsloping,
-    vessel_one, vessel_three, vessel_two, vessel_zero,
-    thal_no, thal_normal, thal_reversable
+    exercise_induced_angina
 ]])
 
 # Scale input
